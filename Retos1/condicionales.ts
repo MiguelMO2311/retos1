@@ -1,3 +1,4 @@
+
 let day:number;
 let month:string;
 
@@ -69,7 +70,7 @@ function continent (country):void {
 
 // *.
 let number:number;
-export function isEven (number):any {
+export function isEven (number):void {
 if ( number %2 === 0) {
     console.log  ('El numero es par');
 } else {
@@ -78,4 +79,4 @@ if ( number %2 === 0) {
 };
 isEven(5);
 
-// export { isEven};  //reto final Invocacion de Funciones.
+// module.exports = (isEven)

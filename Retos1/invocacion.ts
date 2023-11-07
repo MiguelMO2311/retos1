@@ -2,39 +2,23 @@
 // par o impar la suma de los caracteres de cada uno de los siguientes arrays:
 // Para ello tendrás que exportar dichas funciones en los ficheros correspondientes. ok
 // También tendrás que importar dichos ficheros en el fichero actual.
+// // const myAdd = require("./buclesFor");
+// const myIsEven = require("./condicionales");
+import { add } from "./buclesFor";
 
-let libIsEven = require ('./condicionales');
-let libAdd = require('./buclesFor')
+import { isEven } from "./condicionales";
 
-let myArrayC:string[];
-let myArrayB:string[];
-let myArrayV:string[];
-
-myArrayC = ['Casa', 'Coche', 'Ciudad', 'Cesta']
-myArrayB = ['Barco', 'Baca', 'Bicicleta', 'Balón', 'Bisiesto', 'Brasil']
-myArrayV = ['Venezuela', 'Veneno', 'Voltaje']
-
-let chatC = new libAdd.myArrayC
-let chatB = new libAdd.myArrayB
-let chatV = new libAdd.myArrayV
-
-console.log (chatC.isEven());
-console.log (chatC.isEven());
-console.log (chatC.isEven());
-// let sumChatC= new libIsEven.myArrayC
-// let sumChatB= new libIsEven.myArrayB
-// let sumChatV= new libIsEven.myArrayV
+let myArrayC = ['Casa', 'Coche', 'Ciudad', 'Cesta']
+let myArrayB = ['Barco', 'Baca', 'Bicicleta', 'Balón', 'Bisiesto', 'Brasil']
+let myArrayV = ['Venezuela', 'Veneno', 'Voltaje']
 
 
+let nChatC = add(myArrayC);
+let nChatB = add(myArrayB);
+let nChatV = add(myArrayV);
 
-// if ((chatC.libAdd(true)) && (sumChatC.isEven(true))){
-//     console.log (true)
-// } else if ((chatB.libAdd(true)) && (sumChatB.isEven(true))){
-//     console.log (true)
-// }else if ((chatV.libAdd(true)) && (sumChatV.isEven(true))){
-//     console.log (true)
-// } else {
-//     console.log (false)
-}
+isEven(nChatC);
+isEven(nChatB);
+isEven(nChatV);
 
 
