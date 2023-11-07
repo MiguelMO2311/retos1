@@ -93,3 +93,4 @@ function isEven(number) {
 exports.isEven = isEven;
 ;
 isEven(5);
+// module.exports = (isEven)

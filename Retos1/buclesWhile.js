@@ -2,14 +2,14 @@
 // 2. Realizar una función que te devuelva si existe un numero par en el array de números que
 // introduces como parámetro de entrada.
 // La cabecera de la función tendrá el siguiente aspecto: function hasEven(myNums)
-var myNum;
+var mNum;
 var i;
-myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+mNum = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 function hasEven(myNums) {
     i = 0;
-    while (i < myNum.length - 1) {
+    while (i < mNum.length - 1) {
         i++;
-        if ((myNum[i] % 2) == 0) {
+        if ((mNum[i] % 2) == 0) {
             console.log(true);
         }
         else {
@@ -17,7 +17,7 @@ function hasEven(myNums) {
         }
     }
 }
-hasEven(myNum);
+hasEven(mNum);
 // / 3. Realizar una función que reciba un array de nombres y te devuelva verdadero si y solo si
 // todos los nombres empiezan por M.
 // La cabecera de la función tendrá el siguiente aspecto: function startWithM(myNames)
