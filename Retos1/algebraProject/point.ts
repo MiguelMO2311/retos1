@@ -7,6 +7,7 @@ class Point {
         this.x = x;
         this.y = y;
     }
+HEAD
     public getX(): number {
         return this.x;
     }
@@ -27,3 +28,25 @@ class Point {
 }
 console.log(toString())
 export { Point };
+    public getX() {
+        return this.x;
+    }
+    public getY() {
+        return this.y;
+    }
+    public setX(x) {
+        this.x = x;
+    }
+    public setY(y) {
+        this.y = y;
+    }
+
+    public toString(): string {
+        return (`(${this.x.toString()},${this.y.toString()})`)
+    }
+}
+// let point1 = new Point(1,2)
+// console.log(point1.toString())
+
+export { Point };
+>>>>>>> repaso2
