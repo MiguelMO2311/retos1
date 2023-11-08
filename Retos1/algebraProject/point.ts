@@ -1,12 +1,21 @@
+<<<<<<< HEAD
 import { log } from "console";
 
 class Point {
     private x: number;
     private y: number;
+=======
+class Point {
+
+    private x: number;
+    private y: number;
+
+>>>>>>> repaso2
     constructor(x: number, y: number) {
         this.x = x;
         this.y = y;
     }
+<<<<<<< HEAD
 HEAD
     public getX(): number {
         return this.x;
@@ -28,6 +37,8 @@ HEAD
 }
 console.log(toString())
 export { Point };
+=======
+>>>>>>> repaso2
     public getX() {
         return this.x;
     }
@@ -48,5 +59,9 @@ export { Point };
 // let point1 = new Point(1,2)
 // console.log(point1.toString())
 
+<<<<<<< HEAD
+export { Point };
+>>>>>>> repaso2
+=======
 export { Point };
 >>>>>>> repaso2

@@ -20,9 +20,13 @@ var Point = /** @class */ (function () {
     };
     Point.prototype.toString = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.x.toString();
         this.y.toString();
         console.log(this.getX, this.getY);
+=======
+        return ("(".concat(this.x.toString(), ",").concat(this.y.toString(), ")"));
+>>>>>>> repaso2
 =======
         return ("(".concat(this.x.toString(), ",").concat(this.y.toString(), ")"));
 >>>>>>> repaso2
@@ -31,6 +35,9 @@ var Point = /** @class */ (function () {
 }());
 exports.Point = Point;
 <<<<<<< HEAD
+<<<<<<< HEAD
 console.log(toString());
+=======
+>>>>>>> repaso2
 =======
 >>>>>>> repaso2
