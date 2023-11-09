@@ -1,13 +1,10 @@
-
-import { log } from "console";
-
-
-class Point {
+export class Point {
 
     private x: number;
     private y: number;
-
-    constructor(x: number, y: number) {
+    public res:number;
+    
+        constructor(x: number, y: number) {
         this.x = x;
         this.y = y;
     }
@@ -24,17 +21,21 @@ class Point {
     public setY(y: number) {
         this.y = y;
     }
-    public toString():void{
-        this.x.toString();
-        this.y.toString();
-        console.log(this.getX, this.getY)
+    public toString(): string {
+        return (`(${this.x.toString()},${this.y.toString()})`);
     }
-}
-console.log(toString())
-
-// let point1 = new Point(1,2)
-// console.log(point1.toString())
-
-export { Point };
-
+    public distanceTolOrigin(): number {
+        
+       let res = Math.sqrt(( this.x ** 2)
+        + (this.y ** 2));
+        return res;
+    }
+    
+    public calculateDistance(anotherPoint:Point):number{
+        
+        let distanceXY = Math.sqrt ((this.x[1] - this.x[0])**2
+         + (this.y[1]- this.y[0])**2)
+        return distanceXY;
+        }
+} 
 
