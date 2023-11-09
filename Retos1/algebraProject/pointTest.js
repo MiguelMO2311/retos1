@@ -1,28 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 var point_1 = require("./point");
 var p1 = new point_1.Point(5.3, 2.1);
-p1.getX;
-p1.getY;
-console.log(p1.getX, p1.getY);
 p1.toString();
-=======
-=======
->>>>>>> repaso2
-=======
->>>>>>> repaso2
-exports.Point = void 0;
-var point_1 = require("./point");
-Object.defineProperty(exports, "Point", { enumerable: true, get: function () { return point_1.Point; } });
 var point1 = new point_1.Point(1, 2);
 console.log(point1.toString());
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> repaso2
-=======
->>>>>>> repaso2
-=======
->>>>>>> repaso2
+var point0 = new point_1.Point(2, 6);
+console.log(point0.distanceTolOrigin());
+var etX = new point_1.Point(5, 7);
+var etY = new point_1.Point(3, 9);
+console.log(etX.calculateDistance(etY));
