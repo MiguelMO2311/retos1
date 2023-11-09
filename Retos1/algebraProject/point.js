@@ -19,7 +19,15 @@ var Point = /** @class */ (function () {
         this.y = y;
     };
     Point.prototype.toString = function () {
-        return ("(".concat(this.x.toString(), ",").concat(this.y.toString(), ")"));
+        return "(".concat(this.x.toString(), ",").concat(this.y.toString(), ")");
+    };
+    Point.prototype.distanceTolOrigin = function () {
+        var res = Math.sqrt((Math.pow(this.x, 2)) + (Math.pow(this.y, 2)));
+        return res;
+    };
+    Point.prototype.calculateDistance = function (anotherPoint) {
+        var distanceXY = Math.sqrt(Math.pow((this.x[1] - this.x[0]), 2) + Math.pow((this.y[1] - this.y[0]), 2));
+        return distanceXY;
     };
     return Point;
 }());
