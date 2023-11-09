@@ -8,3 +8,5 @@ console.log(point0.distanceTolOrigin());
 var etX = new point_1.Point(5, 7);
 var etY = new point_1.Point(3, 9);
 console.log(etX.calculateDistance(etY));
+var cuadrant1 = new point_1.Point(1, 2);
+console.log(cuadrant1.calcularQuadrant(3, 0));

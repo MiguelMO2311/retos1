@@ -9,3 +9,6 @@ console.log (point0.distanceTolOrigin())
 let etX = new Point (5,7);
 let etY = new Point(3,9);
 console.log (etX.calculateDistance(etY));
+
+let cuadrant1 = new Point (1,2)
+console.log (cuadrant1.calcularQuadrant(3,0))
