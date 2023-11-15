@@ -26,26 +26,46 @@ var Point = /** @class */ (function () {
         return res;
     };
     Point.prototype.calculateDistance = function (anotherPoint) {
-        var distanceXY = Math.sqrt(Math.pow((this.x[1] - this.x[0]), 2) + Math.pow((this.y[1] - this.y[0]), 2));
+        var distanceXY = Math.sqrt(Math.pow((anotherPoint.x - this.x), 2) + Math.pow((anotherPoint.y - this.y), 2));
         return distanceXY;
     };
-    Point.prototype.calcularQuadrant = function (x, y) {
-        if (x == 0 || y == 0) {
+    // d = √((x2 - x1)² + (y2 - y1)²)
+    Point.prototype.calcularQuadrant = function () {
+        if (this.x == 0 || this.y == 0) {
             return 0;
         }
-        else if (x >= 0 && y >= 0) {
+        else if (this.x >= 0 && this.y >= 0) {
             return 1;
         }
-        else if (x < 0 && y >= 0) {
+        else if (this.x < 0 && this.y >= 0) {
             return 2;
         }
-        else if (x < 0 && y < 0) {
+        else if (this.x < 0 && this.y < 0) {
             return 3;
         }
         else
-            (x >= 0 && y < 0);
+            (this.x >= 0 && this.y < 0);
         return 4;
+    };
+    Point.prototype.calculateNearest = function (points) {
+        var bestDif = Number.MAX_VALUE;
+        var near;
+        var nearPoint;
+        for (var i = 0; i < points.length; ++i) {
+            near = this.calculateDistance(points[i]);
+            if (bestDif > near) {
+                bestDif = near;
+                nearPoint = points[i];
+            }
+        }
+        return nearPoint;
     };
     return Point;
 }());
 exports.Point = Point;
+// let pointA: Point = new Point(2, 3);
+// let pointB: Point = new Point(3, 4);
+// let pointC: Point = new Point(5, 8);
+// let listPoints = [pointA, pointB, pointC]
+// let currentPoint = new Point(7,5);
+// console.log (currentPoint.calculateNearest(listPoints));
