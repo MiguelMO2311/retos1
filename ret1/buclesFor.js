@@ -2,23 +2,26 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.add = void 0;
 var x;
+var result;
+var i;
 function evenNumbers(num) {
-    x = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    for (var i = 0; i < x.length; i++) {
+    for (i = 0; i < num.length; i++) {
         if ((x[i] % 2 !== 0) && (x[i] <= num)) {
-            console.log(x[i]);
+            result.push = result + num[i];
         }
     }
+    return result;
 }
 evenNumbers(7);
+console.log(result);
 // Realizar una función que como parámetro de entrada reciba un array y como salida devuelva el array revertido. No se puede utilizar el método revert de la clase array La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr).
 var myArray;
 var res;
 myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 res = [];
 function myRevert(myArr) {
-    for (var i = myArr.length - 1; i >= 0; i--) {
-        res.push(myArr[i]);
+    for (var i_1 = myArr.length - 1; i_1 >= 0; i_1--) {
+        res.push(myArr[i_1]);
     }
     return res;
 }
@@ -30,22 +33,25 @@ console.log(res);
 var myArray1;
 myArray1 = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'violet'];
 function isRainbow(color) {
-    for (var i = 0; i < myArray1.length; i++) {
-        if (color == myArray1[i]) {
+    for (var i_2 = 0; i_2 < color.length; i_2++) {
+        if (myArray1 === color) {
             console.log('This color IS in the Rainbow');
         }
         else {
             console.log('This color ISN`T in the Rainbow');
         }
     }
+    return color;
 }
-isRainbow('cyan');
+isRainbow(['cyan', 'purple', 'red']);
 // Realizar una función que te devuelva la suma del numero de caracteres de las palabras
 // almacenadas en un array. La cabecera de la función tendrá el siguiente aspecto: function add(myWords)
-var myWords;
-myWords = 'Una tarde parda y fría de invierno. Los colegiales estudian. Monotonía de lluvia tras los cristales…';
-function add(myWords) {
-    return myWords.length;
+var myWords = ['Pepe', 'Juan', 'tarde', 'Tormenta', 'Azul'];
+function add(words) {
+    for (var i_3 = 0; i_3 < myWords.length; i_3++) {
+        var res_1 = 0;
+        res_1 = res_1 + words.length;
+    }
 }
 exports.add = add;
 add(myWords);

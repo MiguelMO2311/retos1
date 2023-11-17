@@ -3,19 +3,19 @@
 // introduces como parámetro de entrada.
 // La cabecera de la función tendrá el siguiente aspecto: function hasEven(myNums)
 
-let mNum:number[];
-mNum = [1,2,3,4,5,6,7,8,9]
 function hasEven(myNums):void{
-let i= 0;
-while( i< mNum.length-1){
-i ++;
-if ((mNum[i]%2) == 0){
+let i=0;
+while( i<= myNums.length-1){
+
+if ((myNums[i]%2) == 0){
 console.log (true)
 } else {
-console.log(false)}
+console.log(false)
+}
+i ++;
 }
 }
-hasEven (mNum)
+hasEven ([1,2,3,4,5,6,7,8])
 
 
 
@@ -31,13 +31,12 @@ j = 0
 function startWithM(myNames):void{
 
 while (j < myArrNames.length){
-j ++;
-if ((myArrNames[0][0].charAt(0) == 'M') && (myArrNames[1][0].charAt(0) == 'M') && (myArrNames[2][0].charAt(0) == 'M')
- && (myArrNames[3][0].charAt(0) =='M') && (myArrNames[4][0].charAt (0) == 'M' )){
-console.log ('true')
-} else {
+if ((myArrNames[j].charAt(0) !== 'M')){
 console.log ('false')
+} else {
+console.log ('true')
 }
+j ++;
 }
 }
 startWithM(myArrNames)
